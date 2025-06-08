@@ -1,0 +1,9 @@
+fastapi
+google.generativeai
+dotenv
+pymongo
+transformers
+spacy
+reportlab
+bcrypt
+authlib
