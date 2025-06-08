@@ -1,0 +1,182 @@
+:root {
+  --primary: #b136ed;
+  --primary-dark: #3e096b;
+  --accent: #ffccff;
+  --violet: #490e77;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  /* background-image: url('./image.png'); */
+}
+
+.floating-particle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+.sign-in-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.card-title {
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  color: var(--white);
+  padding: 0.75rem 0.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background: transparent;
+  border-color: var(--accent);
+  color: var(--white);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: var(--white);
+}
+
+.btn-sign-in {
+  background-color: var(--white);
+  color: var(--primary-dark);
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 50px;
+  width: 100%;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-sign-in:hover {
+  background-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sign-up-link {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sign-up-link:hover {
+  color: var(--white);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  75% {
+    transform: translateY(20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.sign-up-link,
+.sign-in-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.sign-up-link:after,
+.sign-in-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.sign-up-link:hover:after,
+.sign-in-link:hover:after {
+  width: 100%;
+}

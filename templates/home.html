@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAKHI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="static/home-styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/home.html">
+          <img src="static/logo.png" alt="Logo" class="nav-logo" />
+          <span class="ms-2">SAKHI</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./home.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features-section">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">CONTACT US</a>
+            </li>
+          </ul>
+          <a href="/chatbot" class="chat-btn">
+            <i class="bi bi-chat-dots-fill"></i> CHAT
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="hero-title" data-aos="fade-up">SAKHI</h1>
+            <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+              Your Trusted Companion in Times of Need
+            </h2>
+            <p class="herVoice" data-aos="fade-up" data-aos-delay="400">
+              "Her voice, her safety."
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+              <a href="/form" class="btn btn-primary btn-lg"
+                ><i class="bi bi-shield-lock me-2"></i>Anonymous</a
+              >
+              <a href="/sign-in" class="btn btn-outline-light btn-lg"
+                ><i class="bi bi-person me-2"></i>Sign In</a
+              >
+              <a href="/sign-up" class="btn btn-outline-light btn-lg"
+                ><i class="bi bi-person-plus me-2"></i>Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,218.7C384,213,480,235,576,250.7C672,267,768,277,864,272C960,267,1056,245,1152,229.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features-section" class="features-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h6 class="text-primary fw-bold">OUR SERVICES</h6>
+          <h2 class="section-title">How SAKHI Helps You</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>Complete Privacy</h3>
+              <p>
+                Your identity remains protected with our secure anonymous
+                reporting system. Share your experiences without fear.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Support Network</h3>
+              <p>
+                Connect with organizations and support groups that can provide
+                guidance, resources, and assistance.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <h3>24/7 Assistance</h3>
+              <p>
+                Our AI-powered chatbot is available round the clock to provide
+                immediate support and guidance.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h3>Track Progress</h3>
+              <p>
+                Follow the status of your reports and see what actions have been
+                taken in response to your concerns.
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Documentation</h3>
+              <p>
+                Maintain a secure record of incidents that can be used as
+                evidence if you choose to take further action.
+              </p>
+            </div>
+          </div> -->
+          <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h3>Resources & Education</h3>
+              <p>
+                Access a wealth of information about your rights, legal options,
+                and self-care strategies.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h6 class="text-white fw-bold">PROCESS</h6>
+          <h2 class="section-title text-white">How It Works</h2>
+          <div class="section-divider bg-white"></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-card">
+              <div class="process-icon">1</div>
+              <h3>Choose Your Reporting Method</h3>
+              <p>
+                Decide whether to report anonymously or with your identity,
+                based on your comfort level.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="process-card">
+              <div class="process-icon">2</div>
+              <h3>Share Your Experience</h3>
+              <p>
+                Fill out the form with details about the incident. Include as
+                much information as you feel comfortable sharing.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="process-card">
+              <div class="process-icon">3</div>
+              <h3>Submit your Story</h3>
+              <p>
+                Submit your story to receive guidance and support. Our team will
+                connect you with trusted resources and organizations that can
+                help.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="process-card">
+              <div class="process-icon">4</div>
+              <h3>Generate and download your form</h3>
+              <p>
+                After submitting, a report will be generated for you. You can
+                download it for your records and use it for further action if
+                needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h6 class="text-primary fw-bold">TESTIMONIALS</h6>
+          <h2 class="section-title">Voices of Strength</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <div class="testimonial-icon">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">
+                SAKHI gave me the courage to speak up about workplace
+                harassment. The anonymous reporting option made me feel safe,
+                and I received the support I needed.
+              </p>
+              <div class="testimonial-user">
+                <div class="avatar">
+                  <span>P</span>
+                </div>
+                <div class="user-info">
+                  <h4>Priya</h4>
+                  <p>Delhi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <div class="testimonial-icon">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">
+                I was hesitant to report my experience, but the supportive
+                community at SAKHI helped me through the process. I'm grateful
+                for this platform.
+              </p>
+              <div class="testimonial-user">
+                <div class="avatar">
+                  <span>M</span>
+                </div>
+                <div class="user-info">
+                  <h4>Meera</h4>
+                  <p>Mumbai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div class="testimonial-icon">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">
+                The resources provided by SAKHI helped me understand my rights
+                and options. I felt empowered to take action and seek justice.
+              </p>
+              <div class="testimonial-user">
+                <div class="avatar">
+                  <span>A</span>
+                </div>
+                <div class="user-info">
+                  <h4>Anjali</h4>
+                  <p>Bangalore</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sakhi-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title text-white">What is SAKHI?</h2>
+          <div class="section-divider bg-white"></div>
+        </div>
+
+        <!-- Flex container for one-line layout -->
+        <div class="sakhi-container">
+          <div class="sakhi-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="sakhi-icon">
+              <!-- <i class="bi bi-shield-lock"></i> -->
+            </div>
+            <h3>S</h3>
+            <p>Safety</p>
+          </div>
+          <div class="sakhi-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="sakhi-icon">
+              <!-- <i class="bi bi-lightbulb"></i> -->
+            </div>
+            <h3>A</h3>
+            <p>Awareness</p>
+          </div>
+          <div class="sakhi-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="sakhi-icon">
+              <!-- <i class="bi bi-heart-fill"></i> -->
+            </div>
+            <h3>K</h3>
+            <p>Kindness</p>
+          </div>
+          <div class="sakhi-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="sakhi-icon">
+              <!-- <i class="bi bi-award-fill"></i> -->
+            </div>
+            <h3>H</h3>
+            <p>Honor</p>
+          </div>
+          <div class="sakhi-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="sakhi-icon">
+              <!-- <i class="bi bi-person-check-fill"></i> -->
+            </div>
+            <h3>I</h3>
+            <p>Independence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h6 class="text-primary fw-bold">FAQ</h6>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    Is my information really anonymous?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Yes, when you choose the anonymous reporting option, we do
+                      not collect any personally identifiable information. Our
+                      system is designed to protect your identity while still
+                      allowing you to share your experience and receive support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    What types of issues can I report?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      You can report various issues including but not limited to
+                      workplace harassment, discrimination, domestic violence,
+                      public harassment, online abuse, and any other situations
+                      where you feel your rights or safety have been
+                      compromised.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    How quickly will I receive a response?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Our AI chatbot provides immediate support and resources.
+                      For reports that require human intervention, our team aims
+                      to respond within 24 hours. Urgent cases are prioritized
+                      for faster response.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    Can I change from anonymous to identified reporting later?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Yes, if you initially choose to report anonymously, you
+                      can later decide to reveal your identity. We provide a
+                      secure process for this transition while maintaining the
+                      integrity of your report.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    What kind of support can I expect?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Depending on your situation, we can connect you with legal
+                      resources, counseling services, support groups, advocacy
+                      organizations, and other relevant assistance. Our goal is
+                      to provide comprehensive support tailored to your specific
+                      needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="mb-4">Ready to Take the First Step?</h2>
+        <p class="lead mb-4">
+          Your voice matters. We're here to listen and support you every step of
+          the way.
+        </p>
+        <div class="cta-buttons">
+          <a href="#hero" class="btn btn-primary btn-lg">Report Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h3>SAKHI</h3>
+              <p>
+                Your trusted companion in times of need. We're committed to
+                providing a safe space for women to share their experiences and
+                receive the support they deserve.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h3>Quick Links</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="#"><i class="bi bi-chevron-right"></i> Home</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-chevron-right"></i> Organizations</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-chevron-right"></i> About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3>Resources</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="#"><i class="bi bi-chevron-right"></i> Legal Aid</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-chevron-right"></i> Support Groups</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-chevron-right"></i> Safety Planning</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-chevron-right"></i> Educational
+                    Materials</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3>Contact Us</h3>
+              <ul class="footer-contact">
+                <li>
+                  <i class="bi bi-telephone-fill"></i>
+                  <div>
+                    <h4>Helpline</h4>
+                    <p>+91 123 456 7890</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-envelope-fill"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p>support@sakhi.org</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container text-center">
+          <p>&copy; 2025 SAKHI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="static/home-script.js"></script>
+  </body>
+</html>
