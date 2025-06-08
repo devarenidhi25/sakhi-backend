@@ -23,7 +23,7 @@ import bcrypt
 load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
-SECRET_KEY = "JWT_SECRET"
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 #GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
