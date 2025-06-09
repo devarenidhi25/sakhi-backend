@@ -1,10 +1,11 @@
 uvicorn
 fastapi
 google.generativeai
-python-dotenv
+dotenv
 pymongo
 transformers
 spacy
 reportlab
 bcrypt
 authlib
+torch
