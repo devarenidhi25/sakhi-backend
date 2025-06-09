@@ -1,7 +1,7 @@
 uvicorn
 fastapi
-google-generativeai   # Correct package name from PyPI
-python-dotenv         # Correct package name
+google-generativeai   
+python-dotenv     
 pymongo
 transformers
 spacy
@@ -9,3 +9,4 @@ reportlab
 bcrypt
 authlib
 torch
+itsdangerous
