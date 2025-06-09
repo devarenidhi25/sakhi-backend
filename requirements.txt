@@ -1,7 +1,7 @@
 uvicorn
 fastapi
 google.generativeai
-dotenv
+python-dotenv
 pymongo
 transformers
 spacy
