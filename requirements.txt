@@ -1,7 +1,7 @@
 uvicorn
 fastapi
-google.generativeai
-dotenv
+google-generativeai   # Correct package name from PyPI
+python-dotenv         # Correct package name
 pymongo
 transformers
 spacy
