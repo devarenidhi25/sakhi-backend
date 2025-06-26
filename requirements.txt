@@ -9,6 +9,7 @@ reportlab
 bcrypt
 authlib[httpx]
 httpx          # add this explicitly too, to be safe
+PyJWT 
 torch
 itsdangerous
 
