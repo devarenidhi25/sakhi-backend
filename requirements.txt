@@ -10,6 +10,7 @@ bcrypt
 authlib
 torch
 itsdangerous
+authlib[httpx]  # ensures all its optional deps are installed too
 
 # Add this explicitly to avoid wheel build failure
 blis==0.7.11
