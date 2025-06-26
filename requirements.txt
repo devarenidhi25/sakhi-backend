@@ -1,7 +1,7 @@
 uvicorn
 fastapi
-google-generativeai   
-python-dotenv     
+google-generativeai
+python-dotenv
 pymongo
 transformers
 spacy
@@ -10,3 +10,4 @@ bcrypt
 authlib
 torch
 itsdangerous
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
