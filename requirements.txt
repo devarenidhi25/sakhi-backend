@@ -7,10 +7,10 @@ transformers==4.40.1
 spacy==3.7.4
 reportlab
 bcrypt
-authlib
+authlib[httpx]
+httpx          # add this explicitly too, to be safe
 torch
 itsdangerous
-authlib[httpx]  # ensures all its optional deps are installed too
 
 # Add this explicitly to avoid wheel build failure
 blis==0.7.11
