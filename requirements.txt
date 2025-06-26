@@ -1,20 +1,32 @@
-uvicorn
+# Core Framework
 fastapi
-google-generativeai
-python-dotenv
+uvicorn
+starlette
+
+# MongoDB & Environment
 pymongo
-transformers==4.40.1
-spacy==3.7.4
-reportlab
-bcrypt
+python-dotenv
+
+# Authentication
 authlib[httpx]
-httpx          # add this explicitly too, to be safe
-PyJWT 
-torch
+httpx
+bcrypt
+python-jose
+PyJWT
 itsdangerous
 
-# Add this explicitly to avoid wheel build failure
+# ML & NLP
+transformers==4.40.1
+torch
+spacy==3.7.4
 blis==0.7.11
 
-# Optional but safe
+# Google AI
+google-generativeai
+
+# PDF Reports
+reportlab
+
+# Utilities
+jinja2
 numpy==1.26.4
