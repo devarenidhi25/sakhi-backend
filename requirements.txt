@@ -3,11 +3,16 @@ fastapi
 google-generativeai
 python-dotenv
 pymongo
-transformers
-spacy
+transformers==4.40.1
+spacy==3.7.4
 reportlab
 bcrypt
 authlib
 torch
 itsdangerous
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
+
+# Add this explicitly to avoid wheel build failure
+blis==0.7.11
+
+# Optional but safe
+numpy==1.26.4
